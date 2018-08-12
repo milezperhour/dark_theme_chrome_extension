@@ -6,8 +6,8 @@
     "icons": {},
     "content_scripts": [
         {
-            "js": ["js/jquery-3.3.1.min.js, js/content.js"],
-            "matches": ["<all_urls>"],
+            "js": ["js/jquery-3.3.1.min.js", "js/content.js"],
+            "matches": ["<all_urls>"]
         }
     ],
     "permissions": [
