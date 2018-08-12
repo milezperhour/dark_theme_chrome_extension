@@ -1,17 +1,15 @@
 {
     "name": "Dark Theme",
-    "version": "1.0",
+    "version": "0.1",
     "manifest_version": 2,
     "description": "Darkens background color of webpages",
     "icons": {},
-    "background": {
-        "scripts": ["background.js"]
-    },
-    "browser_action": {
-        "default_title": "Dark Theme",
-        "default_icon": "some_icon.png"
-    },
-    "options_page": "options.html",
+    "content_scripts": [
+        {
+            "js": ["js/jquery-3.3.1.min.js, js/content.js"],
+            "matches": ["<all_urls>"],
+        }
+    ],
     "permissions": [
         "background",
         "tabs",
